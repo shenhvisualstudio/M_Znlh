@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D48689B6-B14F-4248-A4ED-6A1B340ED1B9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>M_Znlh</RootNamespace>
+    <AssemblyName>M_Znlh</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IPortData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d68b0a7daaf47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\IPortData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="M_DLL_Leo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\M_DLL_Leo.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\IPortData.dll" />
+    <Content Include="bin\log4net.dll" />
+    <Content Include="bin\M_DLL_Leo.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="Container\GetContainerInfo.aspx" />
+    <Content Include="Container\GetContainerNoListByKeyword.aspx" />
+    <Content Include="Entrance\Login.aspx" />
+    <Content Include="Move\DoubleLift.aspx" />
+    <Content Include="Move\MoveBay.aspx" />
+    <Content Include="Ship\GetBaysOfVoyage.aspx" />
+    <Content Include="Ship\GetBayStandardOfShip.aspx" />
+    <Content Include="Ship\GetShipImagesOfBay.aspx" />
+    <Content Include="Ship\UploadShipImages.aspx" />
+    <Content Include="Ship\GetShipImagesOfVoyage.aspx" />
+    <Content Include="Ship\GetShipImageOfBay.aspx" />
+    <Content Include="Statistics\GetMovedFullStatisticsOfVoyage.aspx" />
+    <Content Include="Statistics\GetFullStatisticsOfVoyage.aspx" />
+    <Content Include="Statistics\GetMoveSingleStatisticsOperateOfVoyage.aspx" />
+    <Content Include="Statistics\GetSingleStatisticsOperateOfVoyage.aspx" />
+    <Content Include="Statistics\GetMovedSingleStatisticsTallyOfVoyage.aspx" />
+    <Content Include="Statistics\GetSingleStatisticsTallyOfVoyage.aspx" />
+    <Content Include="test.aspx" />
+    <Content Include="Voyage\GetVoyage.aspx" />
+    <Content Include="Voyage\GetVoyageOfInPort.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\AppLog.cs" />
+    <Compile Include="Common\DicPackage.cs" />
+    <Compile Include="Common\EncryptionTool.cs" />
+    <Compile Include="Common\InterfaceTool.cs" />
+    <Compile Include="Container\GetContainerInfo.aspx.cs">
+      <DependentUpon>GetContainerInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Container\GetContainerInfo.aspx.designer.cs">
+      <DependentUpon>GetContainerInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Container\GetContainerNoListByKeyword.aspx.cs">
+      <DependentUpon>GetContainerNoListByKeyword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Container\GetContainerNoListByKeyword.aspx.designer.cs">
+      <DependentUpon>GetContainerNoListByKeyword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Entrance\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Entrance\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Move\DoubleLift.aspx.cs">
+      <DependentUpon>DoubleLift.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Move\DoubleLift.aspx.designer.cs">
+      <DependentUpon>DoubleLift.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Move\MoveBay.aspx.cs">
+      <DependentUpon>MoveBay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Move\MoveBay.aspx.designer.cs">
+      <DependentUpon>MoveBay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Move\IMoveBay.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ship\GetBaysOfVoyage.aspx.cs">
+      <DependentUpon>GetBaysOfVoyage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ship\GetBaysOfVoyage.aspx.designer.cs">
+      <DependentUpon>GetBaysOfVoyage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ship\GetBayStandardOfShip.aspx.cs">
+      <DependentUpon>GetBayStandardOfShip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ship\GetBayStandardOfShip.aspx.designer.cs">
+      <DependentUpon>GetBayStandardOfShip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ship\GetShipImagesOfBay.aspx.cs">
+      <DependentUpon>GetShipImagesOfBay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ship\GetShipImagesOfBay.aspx.designer.cs">
+      <DependentUpon>GetShipImagesOfBay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ship\ShipImageE.cs" />
+    <Compile Include="Ship\UploadShipImages.aspx.cs">
+      <DependentUpon>UploadShipImages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ship\UploadShipImages.aspx.designer.cs">
+      <DependentUpon>UploadShipImages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ship\GetShipImagesOfVoyage.aspx.cs">
+      <DependentUpon>GetShipImagesOfVoyage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ship\GetShipImagesOfVoyage.aspx.designer.cs">
+      <DependentUpon>GetShipImagesOfVoyage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ship\GetShipImageOfBay.aspx.cs">
+      <DependentUpon>GetShipImageOfBay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ship\GetShipImageOfBay.aspx.designer.cs">
+      <DependentUpon>GetShipImageOfBay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\FullStatisticsE.cs" />
+    <Compile Include="Statistics\GetMovedFullStatisticsOfVoyage.aspx.cs">
+      <DependentUpon>GetMovedFullStatisticsOfVoyage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\GetMovedFullStatisticsOfVoyage.aspx.designer.cs">
+      <DependentUpon>GetMovedFullStatisticsOfVoyage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\GetFullStatisticsOfVoyage.aspx.cs">
+      <DependentUpon>GetFullStatisticsOfVoyage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\GetFullStatisticsOfVoyage.aspx.designer.cs">
+      <DependentUpon>GetFullStatisticsOfVoyage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\GetMoveSingleStatisticsOperateOfVoyage.aspx.cs">
+      <DependentUpon>GetMoveSingleStatisticsOperateOfVoyage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\GetMoveSingleStatisticsOperateOfVoyage.aspx.designer.cs">
+      <DependentUpon>GetMoveSingleStatisticsOperateOfVoyage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\GetSingleStatisticsOperateOfVoyage.aspx.cs">
+      <DependentUpon>GetSingleStatisticsOperateOfVoyage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\GetSingleStatisticsOperateOfVoyage.aspx.designer.cs">
+      <DependentUpon>GetSingleStatisticsOperateOfVoyage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\GetMovedSingleStatisticsTallyOfVoyage.aspx.cs">
+      <DependentUpon>GetMovedSingleStatisticsTallyOfVoyage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\GetMovedSingleStatisticsTallyOfVoyage.aspx.designer.cs">
+      <DependentUpon>GetMovedSingleStatisticsTallyOfVoyage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\GetSingleStatisticsTallyOfVoyage.aspx.cs">
+      <DependentUpon>GetSingleStatisticsTallyOfVoyage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\GetSingleStatisticsTallyOfVoyage.aspx.designer.cs">
+      <DependentUpon>GetSingleStatisticsTallyOfVoyage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\SingleStatisticsE.cs" />
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Voyage\GetVoyage.aspx.cs">
+      <DependentUpon>GetVoyage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Voyage\GetVoyage.aspx.designer.cs">
+      <DependentUpon>GetVoyage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Voyage\GetVoyageOfInPort.aspx.cs">
+      <DependentUpon>GetVoyageOfInPort.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Voyage\GetVoyageOfInPort.aspx.designer.cs">
+      <DependentUpon>GetVoyageOfInPort.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\fabu.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2274</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2274/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAaS3Tlt7/zE2oLPSkq8TpdQAAAAACAAAAAAAQZgAAAAEAACAAAABbuQctMB9HXB/V3S3mxqTmMDek0Hdk6Jb5pkRkPMtszwAAAAAOgAAAAAIAACAAAACEsAfk3Gb8y5NFW8aqXXUbwZI2V6sEIE53/8K5nq6nICAAAADS/sTHal70wZCo+vjuPiW4pko6Kg372SyvhdOLuPAUvUAAAAC+uv5haZIX1HEGfTK2nLEQw40hOKE6BSI/iFkrv8H/j4Ij/eJwN2kNRsjbdc2+SU6Tlv3HzeP+EuCv8xT7Ywe5</EncryptedPassword>
+    <_PublishTargetUrl>ftp://168.100.1.218/M_Znlh</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/IPortData.dll">
+      <publishTime>11/11/2016 10:25:18</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>11/11/2016 10:25:20</publishTime>
+    </File>
+    <File Include="bin/M_DLL_Leo.dll">
+      <publishTime>06/10/2017 16:30:51</publishTime>
+    </File>
+    <File Include="bin/M_Znlh.dll">
+      <publishTime>08/21/2017 17:02:09</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/11/2016 10:25:18</publishTime>
+    </File>
+    <File Include="Container/GetContainerInfo.aspx">
+      <publishTime>06/20/2017 10:22:40</publishTime>
+    </File>
+    <File Include="Container/GetContainerListByKeyword.aspx">
+      <publishTime>06/20/2017 10:07:09</publishTime>
+    </File>
+    <File Include="Container/GetContainerNoListByKeyword.aspx">
+      <publishTime>06/20/2017 13:57:56</publishTime>
+    </File>
+    <File Include="Entrance/Login.aspx">
+      <publishTime>02/27/2017 15:34:26</publishTime>
+    </File>
+    <File Include="Move/DoubleLift.aspx">
+      <publishTime>06/24/2017 15:18:23</publishTime>
+    </File>
+    <File Include="Move/MoveBay.aspx">
+      <publishTime>06/24/2017 15:18:50</publishTime>
+    </File>
+    <File Include="Ship/GetBaysOfVoyage.aspx">
+      <publishTime>02/27/2017 15:34:26</publishTime>
+    </File>
+    <File Include="Ship/GetBayStandardOfShip.aspx">
+      <publishTime>02/27/2017 15:34:26</publishTime>
+    </File>
+    <File Include="Ship/GetShipImageOfBay.aspx">
+      <publishTime>02/27/2017 15:34:27</publishTime>
+    </File>
+    <File Include="Ship/GetShipImagesOfBay.aspx">
+      <publishTime>02/27/2017 15:34:27</publishTime>
+    </File>
+    <File Include="Ship/GetShipImagesOfVoyage.aspx">
+      <publishTime>02/27/2017 15:34:27</publishTime>
+    </File>
+    <File Include="Ship/UploadShipImages.aspx">
+      <publishTime>03/02/2017 14:28:59</publishTime>
+    </File>
+    <File Include="Statistics/GetFullStatisticsOfVoyage.aspx">
+      <publishTime>03/24/2017 15:22:39</publishTime>
+    </File>
+    <File Include="Statistics/GetMovedFullStatisticsOfVoyage.aspx">
+      <publishTime>04/25/2017 09:44:40</publishTime>
+    </File>
+    <File Include="Statistics/GetMovedSingleStatisticsOperateOfVoyage.aspx">
+      <publishTime>04/25/2017 11:01:18</publishTime>
+    </File>
+    <File Include="Statistics/GetMovedSingleStatisticsTallyOfVoyage.aspx">
+      <publishTime>04/25/2017 11:01:18</publishTime>
+    </File>
+    <File Include="Statistics/GetMoveSingleStatisticsOperateOfVoyage.aspx">
+      <publishTime>06/07/2017 10:31:17</publishTime>
+    </File>
+    <File Include="Statistics/GetSingleStatisticsOperateOfVoyage.aspx">
+      <publishTime>03/30/2017 10:10:41</publishTime>
+    </File>
+    <File Include="Statistics/GetSingleStatisticsTallyOfVoyage.aspx">
+      <publishTime>03/29/2017 15:54:27</publishTime>
+    </File>
+    <File Include="test.aspx">
+      <publishTime>04/26/2017 09:57:02</publishTime>
+    </File>
+    <File Include="Voyage/GetVoyage.aspx">
+      <publishTime>02/27/2017 15:34:28</publishTime>
+    </File>
+    <File Include="Voyage/GetVoyageOfInPort.aspx">
+      <publishTime>02/27/2017 15:34:28</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>02/28/2017 14:37:36</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
